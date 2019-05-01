@@ -293,6 +293,8 @@ p {
       display: flex;
       flex-direction: column;
       align-items: center; } }
+  .c-story p {
+    text-indent: 0; }
   .c-story__shape {
     width: 15rem;
     height: 15rem;
