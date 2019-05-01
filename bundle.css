@@ -297,6 +297,10 @@ p {
     border-radius: 50%;
     shape-outside: circle(50% at 50% 50%);
     margin-right: 25px; }
+    @media (max-width: 47.99em) {
+      .c-story__shape {
+        margin-right: 0;
+        margin-bottom: 30px; } }
     .c-story__shape img {
       height: 100%;
       transform-origin: 0 10%;
