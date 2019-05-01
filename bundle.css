@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
         bottom: -8px; } }
   @media (max-width: 47.99em) {
     h1, h2, h3, h4, h5, h6 {
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       line-height: 1em; } }
 
 h1 {
@@ -176,7 +176,8 @@ New components that will be used
       padding: 0 40px; } }
   @media (max-width: 47.99em) {
     .c-wrapper {
-      padding: 0 20px; } }
+      padding: 0 20px;
+      margin: 20px 0 0 0; } }
 
 p {
   color: #0D2172;
@@ -269,6 +270,10 @@ p {
 
 .c-experiences__article--5 {
   animation: fadeOut 2s backwards 8s; }
+
+@media (max-width: 47.99em) {
+  .c-header h1 {
+    margin-bottom: 40px; } }
 
 .c-header div {
   display: flex;
