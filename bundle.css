@@ -25,19 +25,28 @@
   100% {
     transform: translateX(0%); } }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.2); }
-  100% {
-    transform: scale(1); } }
-
 @keyframes fadeOut {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@keyframes width0To100 {
+  0%, 100% {
+    height: 40px;
+    background-color: #fff;
+    border-top: solid 1px #BEBEBE;
+    border-bottom: solid 1px #BEBEBE; }
+  0% {
+    width: 0; }
+  100% {
+    width: 34px; } }
+
+@keyframes width100To0 {
+  0% {
+    width: 0; }
+  100% {
+    width: 34px; } }
 
 *,
 *::before,
@@ -203,7 +212,10 @@ p {
     padding: 40px 60px;
     height: 100%;
     border-radius: 5px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    transition: all .3s ease-in-out; }
+    .c-experiences__container article:hover {
+      background-color: #f2f2f2; }
     .c-experiences__container article header span {
       margin-bottom: 20px;
       display: block;
@@ -212,38 +224,6 @@ p {
         .c-experiences__container article header span {
           padding-top: 10px;
           margin-bottom: 10px; } }
-    .c-experiences__container article:not(:last-child):nth-child(even) {
-      position: relative; }
-      .c-experiences__container article:not(:last-child):nth-child(even)::after {
-        content: '';
-        position: absolute;
-        bottom: 30px;
-        left: -34px;
-        z-index: 1;
-        width: 34px;
-        height: 40px;
-        background-color: #fff;
-        border-top: solid 1px #BEBEBE;
-        border-bottom: solid 1px #BEBEBE; }
-        @media (max-width: 63.99em) {
-          .c-experiences__container article:not(:last-child):nth-child(even)::after {
-            display: none; } }
-    .c-experiences__container article:not(:last-child):nth-child(odd) {
-      position: relative; }
-      .c-experiences__container article:not(:last-child):nth-child(odd)::after {
-        content: '';
-        position: absolute;
-        bottom: 250px;
-        right: -34px;
-        z-index: 1;
-        width: 34px;
-        height: 40px;
-        background-color: #fff;
-        border-top: solid 1px #BEBEBE;
-        border-bottom: solid 1px #BEBEBE; }
-        @media (max-width: 63.99em) {
-          .c-experiences__container article:not(:last-child):nth-child(odd)::after {
-            display: none; } }
     @media (min-width: 64em) {
       .c-experiences__container article:nth-child(2) {
         margin-top: 300px; }
@@ -257,19 +237,52 @@ p {
         padding: 20px; } }
 
 .c-experiences__article--1 {
-  animation: wobble 3s ease-in-out; }
+  animation: wobble 3s ease-in-out;
+  position: relative; }
+  .c-experiences__article--1::after {
+    content: '';
+    position: absolute;
+    bottom: 250px;
+    left: 622px;
+    z-index: 1;
+    animation: width0To100 1s forwards 3s; }
+    @media (max-width: 63.99em) {
+      .c-experiences__article--1::after {
+        display: none; } }
 
 .c-experiences__article--2 {
-  animation: fadeOut 2s backwards 2s; }
+  animation: fadeOut 2s backwards 4s;
+  position: relative; }
+  .c-experiences__article--2::after {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    right: 622px;
+    z-index: 1;
+    animation: width0To100 2s forwards 6s; }
+    @media (max-width: 63.99em) {
+      .c-experiences__article--2::after {
+        display: none; } }
 
 .c-experiences__article--3 {
-  animation: fadeOut 2s backwards 4s; }
+  animation: fadeOut 2s backwards 8s;
+  position: relative; }
+  .c-experiences__article--3::after {
+    content: '';
+    position: absolute;
+    bottom: 250px;
+    left: 622px;
+    z-index: 1;
+    animation: width0To100 2s forwards 10s; }
+    @media (max-width: 63.99em) {
+      .c-experiences__article--3::after {
+        display: none; } }
 
 .c-experiences__article--4 {
-  animation: fadeOut 2s backwards 6s; }
+  animation: fadeOut 3s backwards 12s; }
 
 .c-experiences__article--5 {
-  animation: fadeOut 2s backwards 8s; }
+  animation: fadeOut 3s backwards 24s; }
 
 @media (max-width: 47.99em) {
   .c-header h1 {
