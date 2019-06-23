@@ -174,7 +174,8 @@ body {
   font-family: "Source Sans Pro", "Helvetica", sans-serif; }
 
 html, body {
-  font-size: 16px; }
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased; }
 
 /**
 New components that will be used
