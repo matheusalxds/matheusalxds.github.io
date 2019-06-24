@@ -217,7 +217,7 @@ p {
     height: 100%;
     border-radius: 5px;
     margin-top: 20px;
-    transition: all .3s ease-in-out; }
+    transition: background-color .3s ease-in-out; }
     .c-experiences__container article:hover {
       background-color: #e6f0ff; }
     .c-experiences__container article header span {
@@ -243,15 +243,16 @@ p {
 .c-experiences__article--1, .c-experiences__article--2, .c-experiences__article--3, .c-experiences__article--4 {
   opacity: 0; }
 
-.c-experiences__article--1-animate {
-  animation: wobble 3s ease-in-out;
-  position: relative;
+.c-experiences__article--1-animate, .c-experiences__article--2-animate, .c-experiences__article--3-animate, .c-experiences__article--4-animate {
   opacity: 1; }
 
+.c-experiences__article--1-animate {
+  animation: wobble 3s ease-in-out;
+  position: relative; }
+
 .c-experiences__article--2-animate {
-  animation: fadeOut 2s backwards;
-  position: relative;
-  opacity: 1; }
+  animation: fadeOut 2s ease-in-out;
+  position: relative; }
   .c-experiences__article--2-animate::before {
     content: '';
     position: absolute;
@@ -268,9 +269,8 @@ p {
         transform: translateX(-50%); } }
 
 .c-experiences__article--3-animate {
-  animation: fadeOut 2s backwards;
-  position: relative;
-  opacity: 1; }
+  animation: fadeOut 2s ease-in-out;
+  position: relative; }
   .c-experiences__article--3-animate::after {
     content: '';
     position: absolute;
@@ -286,9 +286,8 @@ p {
         transform: translateX(-50%); } }
 
 .c-experiences__article--4-animate {
-  animation: fadeOut 3s backwards;
-  position: relative;
-  opacity: 1; }
+  animation: fadeOut 3s ease-in-out;
+  position: relative; }
   .c-experiences__article--4-animate::after {
     content: '';
     position: absolute;
