@@ -243,16 +243,15 @@ p {
 .c-experiences__article--1, .c-experiences__article--2, .c-experiences__article--3, .c-experiences__article--4 {
   opacity: 0; }
 
-.c-experiences__article--1-animate, .c-experiences__article--2-animate, .c-experiences__article--3-animate, .c-experiences__article--4-animate {
-  opacity: 1; }
-
 .c-experiences__article--1-animate {
   animation: wobble 3s ease-in-out;
-  position: relative; }
+  position: relative;
+  opacity: 1; }
 
 .c-experiences__article--2-animate {
   animation: fadeOut 2s backwards;
-  position: relative; }
+  position: relative;
+  opacity: 1; }
   .c-experiences__article--2-animate::before {
     content: '';
     position: absolute;
@@ -270,7 +269,8 @@ p {
 
 .c-experiences__article--3-animate {
   animation: fadeOut 2s backwards;
-  position: relative; }
+  position: relative;
+  opacity: 1; }
   .c-experiences__article--3-animate::after {
     content: '';
     position: absolute;
@@ -287,7 +287,8 @@ p {
 
 .c-experiences__article--4-animate {
   animation: fadeOut 3s backwards;
-  position: relative; }
+  position: relative;
+  opacity: 1; }
   .c-experiences__article--4-animate::after {
     content: '';
     position: absolute;
