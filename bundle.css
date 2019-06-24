@@ -69,9 +69,6 @@ html {
   box-sizing: inherit; }
 
 html {
-  text-align: justify; }
-
-html {
   background-color: #F0F0F0; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -159,7 +156,7 @@ time {
     time + time::before {
       content: 'até';
       position: absolute;
-      top: 1px;
+      top: 3px;
       left: 10px;
       color: #0D2172;
       font-size: .85rem; }
@@ -200,6 +197,9 @@ p {
   @media (max-width: 47.99em) {
     p {
       text-indent: 25px; } }
+
+.c-experiences h2 {
+  margin-bottom: 0; }
 
 .c-experiences__container {
   display: flex;
